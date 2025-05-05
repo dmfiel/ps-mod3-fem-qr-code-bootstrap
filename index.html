@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-vh-100 h-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="scss/custom.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <title>Frontend Mentor | QR code component</title>
   </head>
-  <body>
-    <main role="main">
-      <a
-        href="https://frontendmentor.io"
-        aria-label="Frontend Mentor home page"
-      >
-        <img src="images/image-qr-code.png" alt="QR code for Frontend Mentor"
-      /></a>
-      <h1>Improve your front-end skills by building projects</h1>
-      <h2>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </h2>
-    </main>
+  <body class="min-vh-100 h-100" style="background-color: var(--Slate-300)">
+    <div
+      class="d-flex flex-column gap-4 justify-content-center align-items-center"
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+      "
+    >
+      <main role="main" class="card p-4 rounded-4" style="width: 338px">
+        <a
+          href="https://frontendmentor.io"
+          aria-label="Frontend Mentor home page"
+        >
+          <img
+            class="rounded-3"
+            src="images/image-qr-code.png"
+            alt="QR code for Frontend Mentor"
+            width="288px"
+            height="288px"
+        /></a>
+        <h1
+          class="text-center fw-bold p-3 m-0"
+          style="font-size: 1.375rem; color: var(--Slate-900)"
+        >
+          Improve your front-end skills by building projects
+        </h1>
+        <h2
+          class="text-center fw-normal px-3 py-0 m-0"
+          style="font-size: 0.9375rem; color: var(--Slate-500)"
+        >
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </h2>
+      </main>
 
-    <footer class="attribution" role="contentinfo">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">David Fiel</a>.
-    </footer>
+      <footer class="attribution col" role="contentinfo">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">David Fiel</a>.
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
