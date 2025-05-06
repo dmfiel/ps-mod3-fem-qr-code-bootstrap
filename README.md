@@ -46,7 +46,7 @@ body {
 
 David Fiel
 
-- Website - [Add your name here](https://fiel.us)
+- Website - [David Fiel](https://fiel.us)
 
 ## Acknowledgments
 
